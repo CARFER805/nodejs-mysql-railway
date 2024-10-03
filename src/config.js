@@ -1,7 +1,7 @@
 export const PORT = process.env.PORT || 3000;
-export const DB_HOST = process.env.MYSQLHOST || MYSQLHOST; // Cambia a MYSQLHOST
-export const DB_USER = process.env.MYSQLUSER || MYSQLUSER; // Cambia a MYSQLUSER
+export const DB_HOST = process.env.DB_HOST || 'junction.proxy.rlwy.net';
+export const DB_USER = process.env.DB_USER || 'root';
 export const DB_PASSWORD =
-  process.env.MYSQLPASSWORD || 'wKZkXrFownVuboeRAyoiIKvfFljzlGNW'; // Asegúrate que esta contraseña sea correcta
-export const DB_NAME = process.env.MYSQLDATABASE || MYSQLDATABASE; // Cambia a MYSQLDATABASE
-export const DB_PORT = process.env.MYSQLPORT || MYSQLPORT; // Cambia a MYSQLPORT
+  process.env.DB_PASSWORD || 'wKZkXrFownVuboeRAyoiIKvfFljzlGNW';
+export const DB_NAME = process.env.DB_NAME || 'railway';
+export const DB_PORT = process.env.DB_PORT || '48974';
