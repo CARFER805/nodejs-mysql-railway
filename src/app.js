@@ -31,5 +31,12 @@ app.get('/create', async (req, res) => {
   }
 });
 
-app.listen(PORT);
-console.log('Server on port', PORT);
+//app.listen(PORT);
+//console.log('Server on port', PORT);
+app
+  .listen(PORT, () => {
+    console.log('Server on port', PORT);
+  })
+  .on('error', (err) => {
+    console.error('Error starting server:', err);
+  });
